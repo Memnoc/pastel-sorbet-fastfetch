@@ -1,0 +1,194 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  // ── Logo ──────────────────────────────────────────────────
+  "logo": {
+    "type": "small",
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 3,
+    },
+    "color": {
+      "1": "magenta",
+      "2": "blue",
+    },
+  },
+
+  // ── Display ───────────────────────────────────────────────
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "magenta",
+      "title": "magenta",
+      "output": "white",
+    },
+    "percent": {
+      "type": 9,
+      "green": 50,
+      "yellow": 80,
+    },
+    "bar": {
+      "char": {
+        "elapsed": "━",
+        "total": "─",
+      },
+      "width": 20,
+    },
+    "key": {
+      "width": 20,
+    },
+  },
+
+  // ── Modules ───────────────────────────────────────────────
+  "modules": [
+    // ── identity ──────────────────────────────────────────
+    {
+      "type": "title",
+      "format": "{user-name}@{host-name}",
+      "key": "  ",
+      "keyColor": "magenta",
+    },
+    {
+      "type": "separator",
+      "string": "┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈",
+    },
+
+    // ── system ────────────────────────────────────────────
+    {
+      "type": "os",
+      "key": "  ╭─ 󰣇 os",
+      "keyColor": "blue",
+    },
+    {
+      "type": "kernel",
+      "key": "  ├─ 󰒋 kernel",
+      "keyColor": "blue",
+    },
+    {
+      "type": "packages",
+      "key": "  ├─ 󰏗 pkgs",
+      "keyColor": "blue",
+    },
+    {
+      "type": "uptime",
+      "key": "  ╰─ 󰅐 uptime",
+      "keyColor": "blue",
+    },
+
+    // ── spacer ────────────────────────────────────────────
+    "break",
+
+    // ── desktop ───────────────────────────────────────────
+    {
+      "type": "de",
+      "key": "  ╭─ 󰧨 de",
+      "keyColor": "cyan",
+    },
+    {
+      "type": "wm",
+      "key": "  ├─  wm",
+      "keyColor": "cyan",
+    },
+    {
+      "type": "wmtheme",
+      "key": "  ├─ 󰉼 theme",
+      "keyColor": "cyan",
+    },
+    {
+      "type": "icons",
+      "key": "  ├─ 󰀻 icons",
+      "keyColor": "cyan",
+    },
+    {
+      "type": "cursor",
+      "key": "  ├─ 󰇀 cursor",
+      "keyColor": "cyan",
+    },
+    {
+      "type": "font",
+      "key": "  ├─  font",
+      "keyColor": "cyan",
+    },
+    {
+      "type": "terminal",
+      "key": "  ├─  term",
+      "keyColor": "cyan",
+    },
+    {
+      "type": "shell",
+      "key": "  ╰─  shell",
+      "keyColor": "cyan",
+    },
+
+    // ── spacer ────────────────────────────────────────────
+    "break",
+
+    // ── hardware ──────────────────────────────────────────
+    {
+      "type": "host",
+      "key": "  ╭─ 󰌢 host",
+      "keyColor": "yellow",
+    },
+    {
+      "type": "cpu",
+      "key": "  ├─ 󰻠 cpu",
+      "keyColor": "yellow",
+      "temp": true,
+    },
+    {
+      "type": "gpu",
+      "key": "  ├─ 󰍛 gpu",
+      "keyColor": "yellow",
+      "temp": true,
+    },
+    {
+      "type": "display",
+      "key": "  ├─ 󰍹 display",
+      "keyColor": "yellow",
+    },
+    {
+      "type": "memory",
+      "key": "  ├─ 󰑭 mem",
+      "keyColor": "yellow",
+    },
+    {
+      "type": "swap",
+      "key": "  ├─ 󰓡 swap",
+      "keyColor": "yellow",
+    },
+    {
+      "type": "disk",
+      "key": "  ╰─ 󰋊 disk",
+      "keyColor": "yellow",
+      "folders": "/",
+    },
+
+    // ── spacer ────────────────────────────────────────────
+    "break",
+
+    // ── network ───────────────────────────────────────────
+    {
+      "type": "localip",
+      "key": "  ╭─ 󰈀 ip",
+      "keyColor": "green",
+      "showIpv4": true,
+      "showIpv6": false,
+    },
+    {
+      "type": "dns",
+      "key": "  ╰─ 󰇧 dns",
+      "keyColor": "green",
+    },
+
+    // ── spacer ────────────────────────────────────────────
+    "break",
+
+    // ── palette ───────────────────────────────────────────
+    {
+      "type": "colors",
+      "paddingLeft": 5,
+      "symbol": "circle",
+    },
+  ],
+}
